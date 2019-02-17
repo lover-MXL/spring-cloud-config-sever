@@ -1,0 +1,11 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: spring-cloud-config-client
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+   client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/
