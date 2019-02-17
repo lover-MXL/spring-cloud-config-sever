@@ -8,4 +8,4 @@ eureka:
     hostname: 192.168.73.2
   client:
     service-url:
-          defaultZone: http://${eureka.instance.hostname}:8081/eureka
+          defaultZone: http://${eureka.instance.hostname}:8081/eureka/eureka
