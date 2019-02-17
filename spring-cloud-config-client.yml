@@ -7,5 +7,6 @@ eureka:
   instance:
     hostname: 192.168.73.2
   client:
+    register-with-eureka: true
     service-url:
           defaultZone: http://${eureka.instance.hostname}:8081/eureka/eureka
